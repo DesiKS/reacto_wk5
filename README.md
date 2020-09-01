@@ -4,7 +4,7 @@
 
 ## Interviewer Prompt
 
-Given a binary tree, write a function that will return the node value at the deepest level of the tree. You may assume there is a unique deepest node.
+Given a binary tree, write a function that will return the node at the deepest level of the tree. You may assume there is a unique deepest node.
 
 ---
 
