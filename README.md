@@ -117,10 +117,15 @@ const findDeepestBFS = (node) => {
 
 ---
 
-## Summary
+## Time and Space Complexity
 
-#### Big O
+#### Big O for Time
 
 In both solutions, you must visit every node in the tree.
 - Depth First: O(n)
 - Breadth First: O(n)
+
+#### Big O for Space
+
+- Depth First: O(max tree depth) - the worst case for the call stack will be the maximum number of levels (maximum depth) of the tree
+- Breadth First: O(n) - worst case would be a fully balanced tree, in which case we need to store (close to) all of the nodes in our queue
