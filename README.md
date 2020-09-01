@@ -4,7 +4,7 @@
 
 ## Interviewer Prompt
 
-Given a binary tree, write a function that will return the node in the tree with greatest depth.You may assume there is a unique deepest node.
+Given a binary tree, write a function that will return the node value at the deepest level of the tree. You may assume there is a unique deepest node.
 
 ---
 
@@ -40,29 +40,29 @@ findDeepest(a) //Result: f
 
 ---
 
-### RE
+### RE-
 
-- Interviewee does not need to write the "node" function, but should be aware of the structure of a node
+- The interviewee should be aware of the structure of a node (i.e. it has value, left and right properties). Encourage them to write the 'node' function themselves.
 
-- Be sure to have your interviewee sketch an example tree
+- Be sure to have your interviewee sketch an example tree.
 
-- You may need to remind your interviewee of what depth means in a tree (the root has depth 0, and each node's depth is it's parent's depth + 1)
+- You may need to remind your interviewee of what depth means in a tree (the root has depth 0 and each node's depth is its parent's depth + 1)
 
 ---
 
-### AC
+### -AC-
 
 - You may want to remind your interviewee that many tree problems have a depth-first and a breadth-first solution
 
-- Remind them that each child of a tree node is it's own tree
+- Remind them that each child of a tree node is its own tree (will be handy for the depth-first approach)
 
 ---
 
-### TO
+### -TO
 
   - If your interviewee finishes, ask them:
   - What is the Big O of their approach?
-  - If they found the depth first solution, suggest they look for a breadth first solution, or vice-versa
+  - If they found the depth-first solution, suggest they look for a breadth-first solution, or vice-versa
 
 ---
 
@@ -101,7 +101,7 @@ const findDeepestDFS = (node) => {
 
 ```javascript
 const findDeepestBFS = (node) => {
-  // we use a queue to iterate over the tree
+  // use a queue to iterate over the tree
   let queue = [node]
   let current;
   while (queue.length > 0) {
@@ -109,7 +109,7 @@ const findDeepestBFS = (node) => {
     if (current.left) queue.push(current.left)
     if (current.right) queue.push(current.right)
   }
-  // when we exit the while loop, it means we've seen every node, in breadth-first order
+  // when we exit the while loop, it means we've seen every node in breadth-first order
   //current will be the last node we saw, which will necessarily be the deepest node in the tree
   return current;
 }
