@@ -1,4 +1,4 @@
-## Tree Traversal - Deepest Binary Tree Node
+## Deepest Binary Tree Node
 
 ---
 
