@@ -74,7 +74,6 @@ const findDeepestDFS = (node) => {
   let deepestLevel = 0
   // find is a helper function which we'll recurse over
   const find = (node, level = 0) => {
-    if (node) {
       // if this node's level is deeper than the current "deepestLevel", replace it
       if (level > deepestLevel) {
         deepestNode = node;
@@ -88,7 +87,6 @@ const findDeepestDFS = (node) => {
         find(node.right, level + 1);
       }
       // the base case is implicit here: if there's no node.left or node.right, the function execution ends
-    }
   }
   find(node)
   return deepestNode;
