@@ -128,4 +128,4 @@ In both solutions, you must visit every node in the tree.
 #### Big O for Space
 
 - Depth First: O(max tree depth) - the worst case for the call stack will be the maximum number of levels (maximum depth) of the tree
-- Breadth First: O(n) - the worst case would be a fully balanced tree, in which case we need to store (close to) all of the nodes in our queue
+- Breadth First: O(n) - the worst case will be a fully balanced tree, in which case we need to store (close to) all of the nodes in our queue
