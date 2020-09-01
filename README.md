@@ -110,7 +110,7 @@ const findDeepestBFS = (node) => {
     if (current.right) queue.push(current.right)
   }
   // when we exit the while loop, it means we've seen every node in breadth-first order
-  //current will be the last node we saw, which will necessarily be the deepest node in the tree
+  // current will be the last node we saw, which will necessarily be the deepest node in the tree
   return current;
 }
 ```
